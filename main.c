@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <math.h>
 
+#define PI 3.14159265358979323846f
+
 double sum(double a, double b)
 {
     return a + b;
@@ -29,6 +31,16 @@ double square_root(double a)
 double power(double a, double m)
 {
     return pow(a, m);
+}
+
+double area_of_circle(double r)
+{
+    return PI * r * r;
+}
+
+double perimeter_of_circle(double r)
+{
+    return 2 * PI * r;
 }
 
 int main()
